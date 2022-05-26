@@ -35,6 +35,11 @@ while True:
         small_image = "slapshot"
         small_text = "Slapshot Rebound"
 
+    elif(isRunning("RobloxPlayerBet")):
+        state = "Tryhardí"
+        small_image = "roblox"
+        small_text = "Roblox"
+
     elif (isRunning("firefox")):
         state = "Brouzdá internetem."
         small_image = "firefox"
