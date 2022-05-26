@@ -14,5 +14,19 @@ def isRunning(app):
             return True
 
 
+while True:
+
+    small_image = ""
+    small_text = ""
+
+    RPC.update(
+        state = state,
+        large_image = "manjaro",
+        large_text = platform.release(),
+        small_image = small_image,
+        small_text = small_text
+    )
+
+    time.sleep(30)
 
 
