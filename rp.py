@@ -2,11 +2,16 @@ import psutil
 from pypresence import Presence
 import time
 import platform
+from colorama import Fore, Back, Style
+
+print(Fore.GREEN + "[+] Vítej")
 
 client_id = "924851988187996190"
 
+print(Fore.GREEN + "[+] Připojuju RPC")
 RPC = Presence(client_id=client_id)
 RPC.connect()
+
 
 def isRunning(app):
     for i in psutil.process_iter():
@@ -20,7 +25,7 @@ while True:
     small_text = ""
 
 
-    if(isRunning("rocket-league")):
+    if(isRunning("rocketleague")):
         state = "Hraje si s míčkem."
         small_image = "rl"
         small_text = "Rocket League"
@@ -46,6 +51,8 @@ while True:
         small_image = small_image,
         small_text = small_text
     )
+
+    print(Fore.GREEN + "[+] Updatnuto.")
 
     time.sleep(30)
 
