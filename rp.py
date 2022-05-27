@@ -2,7 +2,7 @@ import psutil
 from pypresence import Presence
 import time
 import platform
-from colorama import Fore, Back, Style
+from colorama import Fore
 
 print(Fore.GREEN + "[+] Vítej")
 
@@ -25,13 +25,13 @@ while True:
     small_text = ""
 
 
-    if(isRunning("rocketleague")):
+    if(isRunning("RocketLeague.ex")):
         state = "Hraje si s míčkem."
         small_image = "rl"
         small_text = "Rocket League"
 
     elif(isRunning("Slapshot.exe")):
-        state = "Jezdí po lede."
+        state = "Jezdí po lede ve Slapshotu."
         small_image = "slapshot"
         small_text = "Slapshot Rebound"
 
