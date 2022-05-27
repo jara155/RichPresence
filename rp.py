@@ -25,9 +25,11 @@ while True:
     if(isRunning("pycharm.sh") or isRunning("code")):
         RPC.close()
         connected = False
+        print(Fore.RED + "[-] Aaaa IDE/Editor je zapnutej, mizím.")
     else:
         RPC.connect()
         connected = True
+        print(Fore.GREEN + "[+] Vypadá, že je to pryč, startuju.")
 
 
     time.sleep(1.5)
